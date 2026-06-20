@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao CADMIV - Cadastro Nacional</title>
+    <style>
+        :root {
+            --cadmiv-dark: #020617;
+            --cadmiv-card: #0f172a;
+            --cadmiv-accent: #0ea5e9;
+            --cadmiv-text: #f8fafc;
+            --cadmiv-green: #10b981;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--cadmiv-dark); 
+            color: var(--cadmiv-text); 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+        }
+        .container-boas-vindas { 
+            max-width: 550px; 
+            width: 90%;
+            background: linear-gradient(135deg, var(--cadmiv-card) 0%, #1e293b 100%); 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 50px rgba(14, 165, 233, 0.15); 
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .logo-movimento {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .logo-movimento span {
+            color: var(--cadmiv-accent);
+        }
+        h1 { 
+            font-size: 26px; 
+            color: #fff; 
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        .mensagem-doce { 
+            font-size: 15px; 
+            color: #cbd5e1; 
+            line-height: 1.6; 
+            margin-bottom: 35px;
+            text-align: justify;
+        }
+        .badge-status { 
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15); 
+            color: var(--cadmiv-green); 
+            padding: 8px 16px; 
+            border-radius: 50px; 
+            font-size: 12px; 
+            font-weight: bold; 
+            margin-bottom: 25px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            text-transform: uppercase;
+        }
+        .btn-breve { 
+            display: inline-block; 
+            background: var(--cadmiv-accent); 
+            color: var(--cadmiv-dark); 
+            padding: 14px 30px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-size: 15px;
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+            transition: transform 0.2s;
+        }
+        .btn-breve:hover {
+            transform: scale(1.03);
+        }
+        .footer-nota {
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 35px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-boas-vindas">
+        <div class="logo-movimento">CADMIV<span>.com.br</span></div>
+        
+        <div class="badge-status">🌱 Preparando sua Proteção</div>
+        
+        <h1>Seja muito bem-vindo à nossa plataforma!</h1>
+        
+        <div class="mensagem-doce">
+            Olá, amigo condutor! É uma imensa alegria receber a sua visita. Sabemos o quanto o seu veículo — seja ele o seu monociclo elétrico, seu patinete de trajetos curtos ou a sua estimada bicicleta — é valioso para a sua liberdade e o seu dia a dia. É por isso que estamos trabalhando com muito amor, dedicação e afinco para entregar a você o sistema de segurança viária e proteção patrimonial mais robusto do Brasil. Nossas portas digitais estão sendo preparadas nos mínimos detalhes para acolher você com a máxima excelência. Em muito breve, o nosso cadastro nacional estará 100% ativo para emitir o seu Cartão Digital de Conformidade e blindar o seu patrimônio. Obrigado por caminhar conosco rumo ao futuro da micro-mobilidade!
+        </div>
+        
+        <a href="#" class="btn-breve" onclick="alert('Falta muito pouco! Deixe o seu coração aquecido, em breve abriremos os cadastros oficiais.')">Cadastros Liberados em Breve</a>
+        
+        <div class="footer-nota">CADMIV © 2026 • Em Perfeito Alinhamento com a Resolução CONTRAN 996/2023</div>
+    </div>
+
+</body>
+</html>

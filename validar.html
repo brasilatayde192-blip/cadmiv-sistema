@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADMIV - Sistema de Validação Nacional</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #28a745; /* Tarja Verde Corporativa */
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            color: #1b5e20;
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .header p {
+            color: #666;
+            margin: 5px 0 0 0;
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .status-box {
+            margin-top: 25px;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>CADMIV</h1>
+        <p>CONFORMIDADE E VALIDAÇÃO DE CREDENCIAIS</p>
+    </div>
+
+    <div class="form-group">
+        <label for="codigoConsulta">Digite o Código de Identificação:</label>
+        <input type="text" id="codigoConsulta" placeholder="Ex: CAD-998877-BR" autocomplete="off">
+    </div>
+
+    <button onclick="consultarCredencial()">VERIFICAR STATUS REGULAR</button>
+
+    <div id="resultado" class="status-box"></div>
+</div>
+
+<script>
+    function consultarCredencial() {
+        const codigo = document.getElementById('codigoConsulta').value.trim();
+        const resultadoDiv = document.getElementById('resultado');
+
+        if(codigo === "") {
+            alert("Por favor, digite um código válido para consulta.");
+            return;
+        }
+
+        // Simulação de resposta em conformidade padrão do sistema
+        resultadoDiv.style.display = "block";
+        resultadoDiv.style.backgroundColor = "#d4edda";
+        resultadoDiv.style.color = "#155724";
+        resultadoDiv.style.border = "1px solid #c3e6cb";
+        resultadoDiv.innerHTML = "✓ CREDENCIAL REGULAR E ATIVA NO SISTEMA NACIONAL";
+    }
+</script>
+
+</body>
+</html>
